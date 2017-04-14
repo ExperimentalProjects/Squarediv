@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#container').css({ height: $(window).innerHeight(), width: $(window).innerWidth()});
+        $(window).resize(function(){
+           $('#container').css({ height: $(window).innerHeight(), width: $(window).innerWidth()});
+        });
+    });
+</script>
+</head>
+<body>
+  <div id="container">
+     <div class="upperAndLowerDiv">upper</div>
+     <div class="centerDiv">
+         <div class="sideDiv">left</div>
+         <div class="imageDiv">image</div>
+         <div class="sideDiv">right</div>
+     </div>
+     <div class="upperAndLowerDiv">lower</div>
+  </div>
+</body>
+</html>
